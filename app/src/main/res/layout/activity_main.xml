@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorAccent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jamian.theblog.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="0.05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_weight="0.85"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_content_board"
+                    android:background="#ffffff"
+                    android:paddingTop="130dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/ll_content_board_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txt_article_title"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Definitive Proof That Doughnuts Are The New Cupcake."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:id="@+id/txt_article_desc"
+                            android:layout_marginTop="10dp"
+                            android:text="Move over, cupcakes. Doughnuts have arrived.\nRemember when cupcakes were a big deal? Well, that’s all about to be over, because doughnuts have arrived."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:id="@+id/img_article_image"
+                        android:src="@drawable/donut"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:textStyle="bold"
+                            android:text="PREV"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/tv_previous"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="50dp"
+                            android:background="#FF536765"
+                            android:minHeight="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:textStyle="bold"
+                            android:text="NEXT"
+                            android:id="@+id/tv_next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_marginRight="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="#FF536765"
+                            android:minHeight="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="2dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="80dp"
+        android:paddingRight="30dp"
+        android:textStyle="bold"
+        android:text="ZOMATO API"
+        android:id="@+id/tv_app_title"
+        android:textAlignment="textEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+
+</LinearLayout>
